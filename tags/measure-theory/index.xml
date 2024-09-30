@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Measure Theory on Neoneu</title>
+        <link>https://neoneu.github.io/tags/measure-theory/</link>
+        <description>Recent content in Measure Theory on Neoneu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Neoneu</copyright>
+        <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/tags/measure-theory/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Note of Real Analysis by Stein</title>
+        <link>https://neoneu.github.io/p/note-of-real-analysis-by-stein/</link>
+        <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://neoneu.github.io/p/note-of-real-analysis-by-stein/</guid>
+        <description>&lt;img src="https://neoneu.github.io/p/note-of-real-analysis-by-stein/miku-flower.png" alt="Featured image of post Note of Real Analysis by Stein" /&gt;&lt;div&gt;
+The Riemann integral, created by Bernhard Riemann, was the first rigorous definition of the integral of a function on an interval. The Riemann integral is based on the Jordan measure, and defined by taking a limit of a Riemann sum, which is quite intuitive and easy to calculate, making it widely used in almost every aspect of modern science. However, it is not always good enough to satisfy mathematician. Since rational numbers is countable, we may arrange them as $r_1,r_2,\dots,r_k,\dots$ For example, we can arrange them as following: 
+&lt;/div&gt;
+&lt;br/&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;img src=&#34;Diagonal_argument.png&#34; width=400&gt;
+&lt;/div&gt;
+&lt;div&gt;
+Consider such a sequence &lt;span class=&#34;math inline&#34;&gt;\(\{f_k\}_{n=1}^\infty\)&lt;/span&gt; where
+&lt;span class=&#34;math display&#34;&gt;\[
+f_k(x)=\begin{cases}
+1,&amp;amp;x\in\{r_1,r_2,\dots,r_k\}\\
+0,&amp;amp;else
+\end{cases}
+\]&lt;/span&gt;
+Obviously for any $k\in\mathbb{N}^+$, $f_k$ is Riemann integrable and $f_k$ increases to the Dirichlet function
+&lt;span class=&#34;math display&#34;&gt;\[
+f(x)=\begin{cases}
+1,&amp;amp;x\in\mathbb{Q}\\
+0,&amp;amp;else
+\end{cases}
+\]&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;However, the Dirichlet function is not Riemann integrable. Thus we come to the conclusion that the class of functions which are Riemann integrable is not complete. Then Lebesgue integral is developed to solve this problem. The book consists of 7 chapters, but here I&amp;rsquo;ll just share my notes of the first three chpaters. Briefly, first we need to be familiar with some basic conclusions and common techniques in measure theory. Then we will construct the Lebesgue integral step by step and gain some useful conclusion like Fatou&amp;rsquo;s lemma and dominant convergence theorem. Finally, we will discuss differentiation under Lebesgue integral. As for the last 4 chapters, I plan to skip it and use Folland&amp;rsquo;s &lt;em&gt;Real Analysis&lt;/em&gt; instead to complete the whole framework. You can find more information in the corresponding note in my website.&lt;/p&gt;
+&lt;p&gt;For the note of the book, &lt;a class=&#34;link&#34; href=&#34;https://neoneu.github.io/real-analysis-by-stein/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Click here&lt;/a&gt;.&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

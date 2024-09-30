@@ -6,38 +6,22 @@
         <description>Recent content in Categories on Neoneu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>Neonew</copyright>
-        <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Syntax</title>
-        <link>https://neoneu.github.io/categories/syntax/</link>
-        <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+        <copyright>Neoneu</copyright>
+        <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Blogs</title>
+        <link>https://neoneu.github.io/categories/blogs/</link>
+        <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://neoneu.github.io/categories/syntax/</guid>
-        <description></description>
+        <guid>https://neoneu.github.io/categories/blogs/</guid>
+        <description>&lt;img src="https://neoneu.github.io/categories/blogs/OIP.jpg" alt="Featured image of post Blogs" /&gt;</description>
         </item>
         <item>
-        <title>Themes</title>
-        <link>https://neoneu.github.io/categories/themes/</link>
-        <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+        <title>Notes</title>
+        <link>https://neoneu.github.io/categories/notes/</link>
+        <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://neoneu.github.io/categories/themes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Test</title>
-        <link>https://neoneu.github.io/categories/test/</link>
-        <pubDate>Sat, 14 Sep 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://neoneu.github.io/categories/test/</guid>
-        <description>&lt;img src="https://neoneu.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>Test With Whitespaces</title>
-        <link>https://neoneu.github.io/categories/test-with-whitespaces/</link>
-        <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://neoneu.github.io/categories/test-with-whitespaces/</guid>
-        <description></description>
+        <guid>https://neoneu.github.io/categories/notes/</guid>
+        <description>&lt;img src="https://neoneu.github.io/categories/notes/9f50657e-c48f-4781-a5b3-cd6b91003caf.jpg" alt="Featured image of post Notes" /&gt;</description>
         </item>
         
     </channel>

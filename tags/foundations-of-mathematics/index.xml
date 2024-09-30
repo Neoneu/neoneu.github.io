@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Foundations of Mathematics on Neoneu</title>
+        <link>https://neoneu.github.io/tags/foundations-of-mathematics/</link>
+        <description>Recent content in Foundations of Mathematics on Neoneu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Neoneu</copyright>
+        <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/tags/foundations-of-mathematics/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Note of Analysis by Terence Tao</title>
+        <link>https://neoneu.github.io/p/note-of-analysis-by-terence-tao/</link>
+        <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://neoneu.github.io/p/note-of-analysis-by-terence-tao/</guid>
+        <description>&lt;img src="https://neoneu.github.io/p/note-of-analysis-by-terence-tao/miku-garden.png" alt="Featured image of post Note of Analysis by Terence Tao" /&gt;&lt;p&gt;&lt;em&gt;&amp;ldquo;In the same spirit, we have been mindful not to overburden the beginning student with some of the di culties that are inherent in the subject: a proper appreciation of the subtleties and technical complications that arise can come only after one has mastered some of the initial ideas involved.&amp;rdquo;&lt;/em&gt;&lt;p align=&#34;right&#34;&gt;&lt;font face=&#34;Edwardian Script ITC&#34;&gt;Elias M. Stein&lt;/font&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Analysis is the branch of mathematics dealing with continuous functions, limits, and related theories, such as differentiation, integration, measure, infinite sequences, series, and analytic functions. The subject is such a huge topic that it is scarcely possible for one to contain all the details in it. Therefore, it is important for one to find a proper way to start the journey into this unfathomable palace. Fortunately, Terence Tao blaze a trail in this topic, beginning with the most intuitive knowledge for human beings - the natural numbers, and then constructing the edifice of analysis step by step. There are two books in this series, and my note of this series covers the contents up to the Riemann integral. For furthermore knowledge, I will use &lt;em&gt;Real Analysis&lt;/em&gt; by Stein instead to complete the whole framework.&lt;/p&gt;
+&lt;p&gt;For the notes of the book, &lt;a class=&#34;link&#34; href=&#34;https://neoneu.github.io/analysis-by-tao/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Click here&lt;/a&gt;.&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

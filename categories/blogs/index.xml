@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blogs on Neoneu</title>
+        <link>https://neoneu.github.io/categories/blogs/</link>
+        <description>Recent content in Blogs on Neoneu</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Neoneu</copyright>
+        <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/categories/blogs/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Statistics in World War II - How Many Tanks Did Germany Have?</title>
+        <link>https://neoneu.github.io/p/statistics-in-world-war-ii-how-many-tanks-did-germany-have/</link>
+        <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://neoneu.github.io/p/statistics-in-world-war-ii-how-many-tanks-did-germany-have/</guid>
+        <description>&lt;img src="https://neoneu.github.io/p/statistics-in-world-war-ii-how-many-tanks-did-germany-have/tank.jpg" alt="Featured image of post Statistics in World War II - How Many Tanks Did Germany Have?" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;By the end of 1941, most of continental Europe had fallen to Nazi Germany and the other Axis powers, and by 1942, their forces had begun their significant advance in the eastern front deep into the Soviet Union. A key component of their rapid conquests was their revolutionary use of tanks in modern warfare. While other militaries, most notably that of France, used tanks as a modern armored form of cavalry, the Germans were the first to make full use of tanks’ speed and strength.&lt;/p&gt;
+&lt;p&gt;With the Nazis utilizing tanks with such devastating results, it was essential for the Allies to stop them. A key component of the solution was figuring out how many tanks the Germans had deployed in order to allocate resources effectively, since there was a tremendous danger both in underestimating and in overestimating the enemy’s strength. The consequence of underestimating is clear, since one could suddenly be outnumbered in battle. Overestimating is also bad, since it can lead to undue caution and failure to exploit advantages, or to committing too many resources in one theater and thus not having enough elsewhere. The Allies realized that the tanks destroyed and captured during a battle had serial numbers on their gearboxes that could help with this problem. With these data, the Allies found a statistical method to estimate the numbers of the tanks.&lt;/p&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods
+&lt;/h2&gt;&lt;p&gt;Now we gonna focus on searching for a good estimator for the numbers of the tanks. But before we start calculation, we should first clarify our criterion, that is, what properties are &amp;ldquo;good&amp;rdquo;? An intuitive idea is to find an unbiased estimator with as small variance as possible, and that is exactly what I&amp;rsquo;d pursue here. Then we may assume some key information for a deeper analysis. Suppose that Germany had $N$ tanks in total, and that the Allies observed $k$ tanks. Let the numbers of observed tanks be $x_{(1)},x_{(2)},\dots,x_{(k)}$ and $x_{(1)}&amp;lt;x_{(2)}&amp;lt;\dots&amp;lt;x_{(k)}$. What&amp;rsquo;s more, each tank has an equal chance of being observed. Our goal is to find $\widehat{N}$, which is an estimator of $N$.&lt;/p&gt;
+&lt;h3 id=&#34;method-i&#34;&gt;Method I
+&lt;/h3&gt;&lt;p&gt;If we consider the numbers of observed tanks as a set of random variables $X_{(1)},X_{(2)},\dots,X_{(k)}$ ($X_{(1)}&amp;lt;X_{(2)}&amp;lt;\dots&amp;lt;X_{(k)}$), and $x_{(1)},x_{(2)},\dots,x_{(k)}$ as their observations, then we have
+$$
+\Pr(X_{(k)}=x_{(k)})=\frac{x_{(k)}-1\choose k-1}{N \choose k}.
+$$
+So
+$$
+\mathbb{E}(X_{(k)})=\sum_{m=k}^{N}m\Pr(X_{(k)}=m)=\sum_{m=k}^{N}m\frac{m-1\choose k-1}{N \choose k}
+=k\sum_{m=k}^{N}\frac{m\choose k}{N \choose k}=\frac{k(N+1)}{k+1},
+$$
+$$
+\mathbb{E}(X_{(k)}^2)=\sum_{m=k}^{N}m^2\frac{m-1\choose k-1}{N \choose k}=
+\sum_{m=k}^{N}(m+1)m\frac{m-1\choose k-1}{N \choose k}-\sum_{m=k}^{N}m\frac{m-1\choose k-1}{N \choose k}
+=\frac{k(N+1)(N+2)}{k+2}.
+$$
+Here we use a trick, that is $\sum_{m=k}^N {m\choose k}={N+1\choose k+1}$. The fomula can be proven by induction. Rearranging the equation, we have
+$$
+N=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1.
+$$
+So the point estimation of $N$ is
+$$
+\widehat{N}=\left(1+\frac{1}{k}\right)X_{(k)}-1.
+$$
+Let&amp;rsquo;s check some properties of the estimator,
+$$
+\mathbb{E}(\widehat{N})=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,
+$$&lt;/p&gt;
+&lt;div&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+\mathrm{var}(\widehat{N})&amp;=\left(1+\frac{1}{k}\right)^2\mathrm{var}(X_{(k)})\\
+&amp;=\left(1+\frac{1}{k}\right)^2\left(\mathbb{E}(X_{(k)}^2)-\left(\mathbb{E}(X_{(k)})\right)^2\right)\\
+&amp;=\frac{(N-k)(N+1)}{k(k+2)}.
+\end{aligned}
+\]&lt;/span&gt;
+&lt;/div&gt;
+When $k\ll N$, the standard error of $\widehat{N}$ approximately equals to $N/k$. If the Allies observed more tanks, then the standard error will decrease rapidly. The fact is in accord with our intuition. Since we have only one observation of the random variable $X_{(k)}$, the result is satisfactory.
+&lt;h3 id=&#34;method-ii&#34;&gt;Method II
+&lt;/h3&gt;</description>
+        </item>
+        <item>
+        <title>Waltz of the Flowers</title>
+        <link>https://neoneu.github.io/p/waltz-of-the-flowers/</link>
+        <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://neoneu.github.io/p/waltz-of-the-flowers/</guid>
+        <description>&lt;img src="https://neoneu.github.io/p/waltz-of-the-flowers/valse.png" alt="Featured image of post Waltz of the Flowers" /&gt;&lt;p&gt;&lt;em&gt;“It’s awfully fun to write a march for tin soldiers, and a waltz for flowers!”&lt;/em&gt;&lt;p align=&#34;right&#34;&gt;&lt;font face=&#34;Edwardian Script ITC&#34;&gt;Pyotr Ilyich Tchaikovsky&lt;/font&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;Tchaikovsky’s iconic &lt;em&gt;Waltz of the Flowers&lt;/em&gt; is a piece of orchestral music that features in the second act of his ever-loved festive ballet &lt;em&gt;The Nutcracker&lt;/em&gt;. The ballet was premiered at Christmastime in 1892, and has since been one of the most popular ballets in the world. It is based on E. T. A Hoffmann’s 1816 fairytale &lt;em&gt;The Nutcracker&lt;/em&gt; and &lt;em&gt;The Mouse King&lt;/em&gt;, which tells the story of a young girl who adventures into the ‘Land of Sweets’ on Christmas Eve.&lt;/p&gt;
+&lt;p&gt;Undoubtedly, it is a challenge to play such a piece of orchestral music on a single guitar, since some details will inevitably be lost. However, I just love this piece so much that I can&amp;rsquo;t help myself trying to figure out the whole piece on my own guitar. Fortunately, I finally created its guitar tablature. All work is done on the Power TAB Editor. If you also want to compose you own work, just do it!&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;Waltz%20of%20the%20Flowers.pdf&#34; &gt;Here&lt;/a&gt; is the pdf of the TAB.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;Waltz%20of%20the%20Flowers.pt2&#34; &gt;Here&lt;/a&gt; is the pt2 file of the TAB, in which you can play and edit the TAB if you have already installed Power TAB Editor.&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

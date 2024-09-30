@@ -6,17 +6,8 @@
         <description>Recent content in Pages on Neoneu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Neonew</copyright>
-        <lastBuildDate>Sat, 07 Sep 2024 22:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>关于</title>
-        <link>https://neoneu.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Sat, 07 Sep 2024 22:00:00 +0000</pubDate>
-        
-        <guid>https://neoneu.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;测试&lt;/p&gt;
-</description>
-        </item>
-        <item>
+        <copyright>Neoneu</copyright>
+        <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/zh-cn/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>档案</title>
         <link>https://neoneu.github.io/zh-cn/archives/</link>
         <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
@@ -25,12 +16,12 @@
         <description></description>
         </item>
         <item>
-        <title>链接</title>
-        <link>https://neoneu.github.io/zh-cn/%E9%93%BE%E6%8E%A5/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <title>关于</title>
+        <link>https://neoneu.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</link>
+        <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://neoneu.github.io/zh-cn/%E9%93%BE%E6%8E%A5/</guid>
-        <description>&lt;p&gt;这里包含一些有用的网站。&lt;/p&gt;
+        <guid>https://neoneu.github.io/zh-cn/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;p&gt;测试&lt;/p&gt;
 </description>
         </item>
         <item>
