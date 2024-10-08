@@ -15,11 +15,11 @@
         <guid>https://neoneu.github.io/p/statistics-in-world-war-ii-how-many-tanks-did-germany-have/</guid>
         <description>&lt;img src="https://neoneu.github.io/p/statistics-in-world-war-ii-how-many-tanks-did-germany-have/tank.jpg" alt="Featured image of post Statistics in World War II - How Many Tanks Did Germany Have?" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;By the end of 1941, most of continental Europe had fallen to Nazi Germany and the other Axis powers, and by 1942, their forces had begun their significant advance in the eastern front deep into the Soviet Union. A key component of their rapid conquests was their revolutionary use of tanks in modern warfare. While other militaries, most notably that of France, used tanks as a modern armored form of cavalry, the Germans were the first to make full use of tanks’ speed and strength.&lt;/p&gt;
-&lt;p&gt;With the Nazis utilizing tanks with such devastating results, it was essential for the Allies to stop them. A key component of the solution was figuring out how many tanks the Germans had deployed in order to allocate resources effectively, since there was a tremendous danger both in underestimating and in overestimating the enemy’s strength. The consequence of underestimating is clear, since one could suddenly be outnumbered in battle. Overestimating is also bad, since it can lead to undue caution and failure to exploit advantages, or to committing too many resources in one theater and thus not having enough elsewhere. The Allies realized that the tanks destroyed and captured during a battle had serial numbers on their gearboxes that could help with this problem. With these data, the Allies found a statistical method to estimate the numbers of the tanks.&lt;/p&gt;
+&lt;p&gt;With the Nazis utilizing tanks with such devastating results, it was essential for the Allies to stop them. A key component of the solution was figuring out how many tanks the Germans had deployed in order to allocate resources effectively, since there was a tremendous danger both in underestimating and in overestimating the enemy’s strength. The consequence of underestimating is clear, since one could suddenly be outnumbered in battle. Overestimating is also bad, since it can lead to undue caution and failure to exploit advantages, or to committing too many resources in one theater and thus not having enough elsewhere. The Allies realized that the tanks destroyed and captured during a battle had serial numbers on their gearboxes that could help with this problem. With these data, the Allies found a statistical method to estimate the number of the tanks.&lt;/p&gt;
 &lt;h2 id=&#34;methods&#34;&gt;Methods
-&lt;/h2&gt;&lt;p&gt;Now we gonna focus on searching for a good estimator for the numbers of the tanks. But before we start calculation, we should first clarify our criterion, that is, what properties are &amp;ldquo;good&amp;rdquo;? An intuitive idea is to find an unbiased estimator with as small variance as possible, and that is exactly what I&amp;rsquo;d pursue here. Then we may assume some key information for a deeper analysis. Suppose that Germany had $N$ tanks in total, and that the Allies observed $k$ tanks. Let the numbers of observed tanks be $x_{(1)},x_{(2)},\dots,x_{(k)}$ and $x_{(1)}&amp;lt;x_{(2)}&amp;lt;\dots&amp;lt;x_{(k)}$. What&amp;rsquo;s more, each tank has an equal chance of being observed. Our goal is to find $\widehat{N}$, which is an estimator of $N$.&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;Now we gonna focus on searching for a good estimator for the number of the tanks. But before we start calculation, we should first clarify our criterion, that is, what properties are &amp;ldquo;good&amp;rdquo;? An intuitive idea is to find an unbiased estimator with as small variance as possible, and that is exactly what I&amp;rsquo;d pursue here. Then we may assume some key information for a deeper analysis. Suppose that Germany had $N$ tanks in total, and that the Allies observed $k$ tanks. Let the numbers of observed tanks be $x_{(1)},x_{(2)},\dots,x_{(k)}$ and $x_{(1)}&amp;lt;x_{(2)}&amp;lt;\dots&amp;lt;x_{(k)}$. Our goal is to find $\widehat{N}$, which is an estimator of $N$.&lt;/p&gt;
 &lt;h3 id=&#34;method-i&#34;&gt;Method I
-&lt;/h3&gt;&lt;p&gt;If we consider the numbers of observed tanks as a set of random variables $X_{(1)},X_{(2)},\dots,X_{(k)}$ ($X_{(1)}&amp;lt;X_{(2)}&amp;lt;\dots&amp;lt;X_{(k)}$), and $x_{(1)},x_{(2)},\dots,x_{(k)}$ as their observations, then we have
+&lt;/h3&gt;&lt;p&gt;Now I&amp;rsquo;m going to demonstrate the original variant of the problem. Here we need another two assumptions that the first tank is numbered 1, and that the numbers are consecutive. What&amp;rsquo;s more, each tank has an equal chance of being observed. If we consider the numbers of observed tanks as a set of random variables $X_{(1)},X_{(2)},\dots,X_{(k)}$ ($X_{(1)}&amp;lt;X_{(2)}&amp;lt;\dots&amp;lt;X_{(k)}$), and $x_{(1)},x_{(2)},\dots,x_{(k)}$ as their observations, then we have
 $$
 \Pr(X_{(k)}=x_{(k)})=\frac{x_{(k)}-1\choose k-1}{N \choose k}.
 $$
@@ -33,7 +33,7 @@ $$
 \sum_{m=k}^{N}(m+1)m\frac{m-1\choose k-1}{N \choose k}-\sum_{m=k}^{N}m\frac{m-1\choose k-1}{N \choose k}
 =\frac{k(N+1)(N+2)}{k+2}.
 $$
-Here we use a trick, that is $\sum_{m=k}^N {m\choose k}={N+1\choose k+1}$. The fomula can be proven by induction. Rearranging the equation, we have
+Here we use a trick, that is $\sum_{m=k}^N {m\choose k}={N+1\choose k+1}$. The fomula can be proven by induction. Rearranging the equality, we have
 $$
 N=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1.
 $$
@@ -41,7 +41,7 @@ So the point estimation of $N$ is
 $$
 \widehat{N}=\left(1+\frac{1}{k}\right)X_{(k)}-1.
 $$
-Let&amp;rsquo;s check some properties of the estimator,
+Let&amp;rsquo;s check some numerical characteristics of the estimator,
 $$
 \mathbb{E}(\widehat{N})=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,
 $$&lt;/p&gt;
@@ -56,7 +56,57 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 When $k\ll N$, the standard error of $\widehat{N}$ approximately equals to $N/k$. If the Allies observed more tanks, then the standard error will decrease rapidly. The fact is in accord with our intuition. Since we have only one observation of the random variable $X_{(k)}$, the result is satisfactory.
 &lt;h3 id=&#34;method-ii&#34;&gt;Method II
-&lt;/h3&gt;</description>
+&lt;/h3&gt;&lt;p&gt;As we review the assupmtions of Method I, we may think of such a question - what if the first tank is not numbered 1? Method II is designed to remove this assumption. In this case, both the lowest serial number and the highest serial number are unknown to us, so we denote them as $N_1$ and $N_2$ respectively. Immediately we gain the identity
+$$
+N=N_2-N_1+1.
+$$
+Frome the identity we see that $N$ is determined by the difference between $N_2$ and $N_1$, so we can try to use the difference between $X_{(k)}$ and $X_{(1)}$. Now we define the spread $S=X_{(k)}-X_{(1)}$ and hence the observerd spread $s=x_{(k)}-x_{(1)}$. Then we have
+$$
+\Pr(S=s)=\frac{\sum_{x_{(1)}=N_1}^{N_2-s}{s-1\choose k-2}}{N\choose k}=\frac{(N_2-s-N_1+1){s-1\choose k-2}}{N\choose k}=\frac{(N-s){s-1\choose k-2}}{N\choose k}.
+$$
+As what we&amp;rsquo;ve done in Method 1, we are interested in $\mathbb{E}(S)$ and $\mathrm{var}(S)$. Before we start to calcute these two numerical characteristics, let&amp;rsquo;s first figure out some equations to make our calculation more easy:&lt;/p&gt;
+&lt;div&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+\Sigma_1&amp;=\sum_{s=k-1}^{N-1}s{s-1\choose k-2}=(k-1)\sum_{s=k-1}^{N-1}s{s\choose k-1}=(k-1){N\choose k},\\
+\Sigma_2&amp;=\sum_{s=k-1}^{N-1}(s+1)s{s-1\choose k-2}=k(k-1)\sum_{s=k-1}^{N-1}s{s+1\choose k+1}=k(k-1){N+1\choose k+1},\\
+\Sigma_3&amp;=\sum_{s=k-1}^{N-1}(s+2)(s+1)s{s-1\choose k-2}=(k+1)k(k-1)\sum_{s=k-1}^{N-1}s{s+2\choose k+2}\\&amp;=(k+1)k(k-1){N+2\choose k+2}.
+\end{aligned}
+\]&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Then, it is easy to find that&lt;/p&gt;
+&lt;div&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+\mathbb{E}(S)&amp;=\sum_{s=k-1}^{N-1}s\Pr(S=s)=\sum_{s=k-1}^{N-1}\frac{s(N-s){s-1\choose k-2}}{N\choose k}=\frac{(N+1)\Sigma_1-\Sigma_2}{N\choose k}\\&amp;=\frac{(N+1)(k-1)}{k+1},\\
+\mathbb{E}(S^2)&amp;=\sum_{s=k-1}^{N-1}s^2\Pr(S=s)=\sum_{s=k-1}^{N-1}\frac{s^2(N-s){s-1\choose k-2}}{N\choose k}=\frac{(N+3)\Sigma_2-(N+1)\Sigma_1-\Sigma_3}{N\choose k}\\&amp;=\frac{(kN+k-2)(N+1)(k-1)}{(k+1)(k+2)}.
+\end{aligned}
+\]&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;So the point estimation of $N$ is
+$$
+\widehat{N}=\frac{k+1}{k-1}S-1,
+$$
+and we have&lt;/p&gt;
+&lt;div&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{aligned}
+\mathbb{E}(\widehat{N})&amp;=\frac{k+1}{k-1}\mathbb{E}(S)-1=N,\\
+\mathrm{var}(\widehat{N})&amp;=\left(\frac{k+1}{k-1}\right)^2\mathrm{var}(S)\\
+&amp;=\left(\frac{k+1}{k-1}\right)^2\left(\mathbb{E}(S^2)-\left(\mathbb{E}(S)\right)^2\right)\\
+&amp;=\frac{2(N-k)(N+1)}{(k-1)(k+2)}.
+\end{aligned}
+\]&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Compared to Method I, the variance of the estimator in Method II is about twice as much as that of the estimator in Method I. It seems that Method I is better. However, remind that in Method I, we have one more assumption. If the assumption is true, then the estimator I is better since the estimator II neglects the useful information, which makes it possess bigger variance. But if the assumption is not true, then the estimator I is not necessarily an unbiased estimation since all the deduction is based on the wrong assumption! Thus, we can hardly tell which etimator is better and the choice depends on your criterion.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Note of Real Analysis by Folland</title>
+        <link>https://neoneu.github.io/p/note-of-real-analysis-by-folland/</link>
+        <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://neoneu.github.io/p/note-of-real-analysis-by-folland/</guid>
+        <description>&lt;img src="https://neoneu.github.io/p/note-of-real-analysis-by-folland/landscape.png" alt="Featured image of post Note of Real Analysis by Folland" /&gt;</description>
         </item>
         <item>
         <title>About</title>
@@ -104,9 +154,9 @@ f(x)=\begin{cases}
 \end{cases}
 \]&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;However, the Dirichlet function is not Riemann integrable. Thus we come to the conclusion that the class of functions which are Riemann integrable is not complete. Then Lebesgue integral is developed to solve this problem. The book consists of 7 chapters, but here I&amp;rsquo;ll just share my notes of the first three chpaters. Briefly, first we need to be familiar with some basic conclusions and common techniques in measure theory. Then we will construct the Lebesgue integral step by step and gain some useful conclusion like Fatou&amp;rsquo;s lemma and dominant convergence theorem. Finally, we will discuss differentiation under Lebesgue integral. As for the last 4 chapters, I plan to skip it and use Folland&amp;rsquo;s &lt;em&gt;Real Analysis&lt;/em&gt; instead to complete the whole framework. You can find more information in the corresponding note in my website.&lt;/p&gt;
+&lt;p&gt;However, the Dirichlet function is not Riemann integrable. Thus we come to the conclusion that the class of functions which are Riemann integrable is not complete. Then Lebesgue integral is developed to solve this problem. The book consists of 7 chapters, but here I&amp;rsquo;ll just share my notes of the first three chpaters. Briefly, first we need to be familiar with some basic conclusions and common techniques in measure theory. Then we will construct the Lebesgue integral step by step and gain some useful conclusion like Fatou&amp;rsquo;s lemma and dominant convergence theorem. Finally, we will discuss differentiation under Lebesgue integral. As for the last 4 chapters, I plan to skip them and use Folland&amp;rsquo;s &lt;em&gt;Real Analysis&lt;/em&gt; instead to complete the whole framework. You can find more information in the corresponding note in my website.&lt;/p&gt;
 &lt;p&gt;For the note of the book, &lt;a class=&#34;link&#34; href=&#34;https://neoneu.github.io/real-analysis-by-stein/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Click here&lt;/a&gt;.&lt;/p&gt;</description>
+    &gt;click here&lt;/a&gt;.&lt;/p&gt;</description>
         </item>
         <item>
         <title>Note of Analysis by Terence Tao</title>
@@ -117,7 +167,7 @@ f(x)=\begin{cases}
         <description>&lt;img src="https://neoneu.github.io/p/note-of-analysis-by-terence-tao/miku-garden.png" alt="Featured image of post Note of Analysis by Terence Tao" /&gt;&lt;p&gt;&lt;em&gt;&amp;ldquo;In the same spirit, we have been mindful not to overburden the beginning student with some of the di culties that are inherent in the subject: a proper appreciation of the subtleties and technical complications that arise can come only after one has mastered some of the initial ideas involved.&amp;rdquo;&lt;/em&gt;&lt;p align=&#34;right&#34;&gt;&lt;font face=&#34;Edwardian Script ITC&#34;&gt;Elias M. Stein&lt;/font&gt;&lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;Analysis is the branch of mathematics dealing with continuous functions, limits, and related theories, such as differentiation, integration, measure, infinite sequences, series, and analytic functions. The subject is such a huge topic that it is scarcely possible for one to contain all the details in it. Therefore, it is important for one to find a proper way to start the journey into this unfathomable palace. Fortunately, Terence Tao blaze a trail in this topic, beginning with the most intuitive knowledge for human beings - the natural numbers, and then constructing the edifice of analysis step by step. There are two books in this series, and my note of this series covers the contents up to the Riemann integral. For furthermore knowledge, I will use &lt;em&gt;Real Analysis&lt;/em&gt; by Stein instead to complete the whole framework.&lt;/p&gt;
 &lt;p&gt;For the notes of the book, &lt;a class=&#34;link&#34; href=&#34;https://neoneu.github.io/analysis-by-tao/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Click here&lt;/a&gt;.&lt;/p&gt;</description>
+    &gt;click here&lt;/a&gt;.&lt;/p&gt;</description>
         </item>
         <item>
         <title>Waltz of the Flowers</title>

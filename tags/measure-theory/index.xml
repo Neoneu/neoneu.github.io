@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Neoneu</copyright>
-        <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/tags/measure-theory/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://neoneu.github.io/tags/measure-theory/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Note of Real Analysis by Folland</title>
+        <link>https://neoneu.github.io/p/note-of-real-analysis-by-folland/</link>
+        <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://neoneu.github.io/p/note-of-real-analysis-by-folland/</guid>
+        <description>&lt;img src="https://neoneu.github.io/p/note-of-real-analysis-by-folland/landscape.png" alt="Featured image of post Note of Real Analysis by Folland" /&gt;</description>
+        </item>
+        <item>
         <title>Note of Real Analysis by Stein</title>
         <link>https://neoneu.github.io/p/note-of-real-analysis-by-stein/</link>
         <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
@@ -36,9 +44,9 @@ f(x)=\begin{cases}
 \end{cases}
 \]&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;However, the Dirichlet function is not Riemann integrable. Thus we come to the conclusion that the class of functions which are Riemann integrable is not complete. Then Lebesgue integral is developed to solve this problem. The book consists of 7 chapters, but here I&amp;rsquo;ll just share my notes of the first three chpaters. Briefly, first we need to be familiar with some basic conclusions and common techniques in measure theory. Then we will construct the Lebesgue integral step by step and gain some useful conclusion like Fatou&amp;rsquo;s lemma and dominant convergence theorem. Finally, we will discuss differentiation under Lebesgue integral. As for the last 4 chapters, I plan to skip it and use Folland&amp;rsquo;s &lt;em&gt;Real Analysis&lt;/em&gt; instead to complete the whole framework. You can find more information in the corresponding note in my website.&lt;/p&gt;
+&lt;p&gt;However, the Dirichlet function is not Riemann integrable. Thus we come to the conclusion that the class of functions which are Riemann integrable is not complete. Then Lebesgue integral is developed to solve this problem. The book consists of 7 chapters, but here I&amp;rsquo;ll just share my notes of the first three chpaters. Briefly, first we need to be familiar with some basic conclusions and common techniques in measure theory. Then we will construct the Lebesgue integral step by step and gain some useful conclusion like Fatou&amp;rsquo;s lemma and dominant convergence theorem. Finally, we will discuss differentiation under Lebesgue integral. As for the last 4 chapters, I plan to skip them and use Folland&amp;rsquo;s &lt;em&gt;Real Analysis&lt;/em&gt; instead to complete the whole framework. You can find more information in the corresponding note in my website.&lt;/p&gt;
 &lt;p&gt;For the note of the book, &lt;a class=&#34;link&#34; href=&#34;https://neoneu.github.io/real-analysis-by-stein/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Click here&lt;/a&gt;.&lt;/p&gt;</description>
+    &gt;click here&lt;/a&gt;.&lt;/p&gt;</description>
         </item>
         
     </channel>
