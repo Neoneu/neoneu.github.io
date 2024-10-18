@@ -125,6 +125,18 @@
     <loc>https://neoneu.github.io/p/waltz-of-the-flowers/</loc>
     <lastmod>2024-06-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://neoneu.github.io/links/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://neoneu.github.io/zh-cn/%E9%93%BE%E6%8E%A5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://neoneu.github.io/links/"
+                />
+  </url><url>
     <loc>https://neoneu.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"

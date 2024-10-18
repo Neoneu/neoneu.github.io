@@ -41,13 +41,11 @@ So the point estimation of $N$ is
 $$
 \widehat{N}=\left(1+\frac{1}{k}\right)X_{(k)}-1.
 $$
-Let&amp;rsquo;s check some numerical characteristics of the estimator,
-$$
-\mathbb{E}(\widehat{N})=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,
-$$&lt;/p&gt;
+Let&amp;rsquo;s check some numerical characteristics of the estimator,&lt;/p&gt;
 &lt;div&gt;
 &lt;span class=&#34;math display&#34;&gt;\[
 \begin{aligned}
+\mathbb{E}(\widehat{N})&amp;=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,\\
 \mathrm{var}(\widehat{N})&amp;=\left(1+\frac{1}{k}\right)^2\mathrm{var}(X_{(k)})\\
 &amp;=\left(1+\frac{1}{k}\right)^2\left(\mathbb{E}(X_{(k)}^2)-\left(\mathbb{E}(X_{(k)})\right)^2\right)\\
 &amp;=\frac{(N-k)(N+1)}{k(k+2)}.
@@ -64,7 +62,7 @@ Frome the identity we see that $N$ is determined by the difference between $N_2$
 $$
 \Pr(S=s)=\frac{\sum_{x_{(1)}=N_1}^{N_2-s}{s-1\choose k-2}}{N\choose k}=\frac{(N_2-s-N_1+1){s-1\choose k-2}}{N\choose k}=\frac{(N-s){s-1\choose k-2}}{N\choose k}.
 $$
-As what we&amp;rsquo;ve done in Method 1, we are interested in $\mathbb{E}(S)$ and $\mathrm{var}(S)$. Before we start to calcute these two numerical characteristics, let&amp;rsquo;s first figure out some equations to make our calculation more easy:&lt;/p&gt;
+As what we&amp;rsquo;ve done in Method 1, we are interested in $\mathbb{E}(S)$ and $\mathrm{var}(S)$. Before we start to calcute these two numerical characteristics, let&amp;rsquo;s first figure out some equations to make our calculation easier:&lt;/p&gt;
 &lt;div&gt;
 &lt;span class=&#34;math display&#34;&gt;\[
 \begin{aligned}
@@ -98,7 +96,9 @@ and we have&lt;/p&gt;
 \end{aligned}
 \]&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;Compared to Method I, the variance of the estimator in Method II is about twice as much as that of the estimator in Method I. It seems that Method I is better. However, remind that in Method I, we have one more assumption. If the assumption is true, then the estimator I is better since the estimator II neglects the useful information, which makes it possess bigger variance. But if the assumption is not true, then the estimator I is not necessarily an unbiased estimation since all the deduction is based on the wrong assumption! Thus, we can hardly tell which etimator is better and the choice depends on your criterion.&lt;/p&gt;</description>
+&lt;p&gt;Compared to Method I, the variance of the estimator in Method II is about twice as much as that of the estimator in Method I. It seems that Method I is better. However, remind that in Method I, we have one more assumption. If the assumption is true, then the estimator I is better since the estimator II neglects the useful information, which makes it possess bigger variance. But if the assumption is not true, then the estimator I is not necessarily an unbiased estimation since all the deduction is based on the wrong assumption! Thus, we can hardly tell which etimator is better and the choice depends on your criterion.&lt;/p&gt;
+&lt;h3 id=&#34;method-iii&#34;&gt;Method III
+&lt;/h3&gt;</description>
         </item>
         <item>
         <title>Note of Real Analysis by Folland</title>

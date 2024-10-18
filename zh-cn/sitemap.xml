@@ -78,6 +78,18 @@
                 href="https://neoneu.github.io/zh-cn/tags/"
                 />
   </url><url>
+    <loc>https://neoneu.github.io/zh-cn/%E9%93%BE%E6%8E%A5/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://neoneu.github.io/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://neoneu.github.io/zh-cn/%E9%93%BE%E6%8E%A5/"
+                />
+  </url><url>
     <loc>https://neoneu.github.io/zh-cn/search/</loc>
     <xhtml:link
                 rel="alternate"

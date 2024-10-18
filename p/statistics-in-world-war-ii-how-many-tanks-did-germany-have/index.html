@@ -97,26 +97,6 @@
                     </a>
                 </li>
             
-                <li>
-                    <a 
-                        href='https://twitter.com'
-                        target="_blank"
-                        title="Twitter"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
         </ol><ol class="menu" id="main-menu">
         
         
@@ -195,6 +175,25 @@
 
                 
                 <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
             </a>
         </li>
         
@@ -277,6 +276,7 @@
       <ol>
         <li><a href="#method-i">Method I</a></li>
         <li><a href="#method-ii">Method II</a></li>
+        <li><a href="#method-iii">Method III</a></li>
       </ol>
     </li>
   </ol>
@@ -388,13 +388,11 @@ So the point estimation of $N$ is
 $$
 \widehat{N}=\left(1+\frac{1}{k}\right)X_{(k)}-1.
 $$
-Let&rsquo;s check some numerical characteristics of the estimator,
-$$
-\mathbb{E}(\widehat{N})=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,
-$$</p>
+Let&rsquo;s check some numerical characteristics of the estimator,</p>
 <div>
 <span class="math display">\[
 \begin{aligned}
+\mathbb{E}(\widehat{N})&=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,\\
 \mathrm{var}(\widehat{N})&=\left(1+\frac{1}{k}\right)^2\mathrm{var}(X_{(k)})\\
 &=\left(1+\frac{1}{k}\right)^2\left(\mathbb{E}(X_{(k)}^2)-\left(\mathbb{E}(X_{(k)})\right)^2\right)\\
 &=\frac{(N-k)(N+1)}{k(k+2)}.
@@ -411,7 +409,7 @@ Frome the identity we see that $N$ is determined by the difference between $N_2$
 $$
 \Pr(S=s)=\frac{\sum_{x_{(1)}=N_1}^{N_2-s}{s-1\choose k-2}}{N\choose k}=\frac{(N_2-s-N_1+1){s-1\choose k-2}}{N\choose k}=\frac{(N-s){s-1\choose k-2}}{N\choose k}.
 $$
-As what we&rsquo;ve done in Method 1, we are interested in $\mathbb{E}(S)$ and $\mathrm{var}(S)$. Before we start to calcute these two numerical characteristics, let&rsquo;s first figure out some equations to make our calculation more easy:</p>
+As what we&rsquo;ve done in Method 1, we are interested in $\mathbb{E}(S)$ and $\mathrm{var}(S)$. Before we start to calcute these two numerical characteristics, let&rsquo;s first figure out some equations to make our calculation easier:</p>
 <div>
 <span class="math display">\[
 \begin{aligned}
@@ -446,6 +444,8 @@ and we have</p>
 \]</span>
 </div>
 <p>Compared to Method I, the variance of the estimator in Method II is about twice as much as that of the estimator in Method I. It seems that Method I is better. However, remind that in Method I, we have one more assumption. If the assumption is true, then the estimator I is better since the estimator II neglects the useful information, which makes it possess bigger variance. But if the assumption is not true, then the estimator I is not necessarily an unbiased estimation since all the deduction is based on the wrong assumption! Thus, we can hardly tell which etimator is better and the choice depends on your criterion.</p>
+<h3 id="method-iii">Method III
+</h3>
 </section>
 
 

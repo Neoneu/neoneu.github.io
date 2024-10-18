@@ -41,13 +41,11 @@ So the point estimation of $N$ is
 $$
 \widehat{N}=\left(1+\frac{1}{k}\right)X_{(k)}-1.
 $$
-Let&amp;rsquo;s check some numerical characteristics of the estimator,
-$$
-\mathbb{E}(\widehat{N})=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,
-$$&lt;/p&gt;
+Let&amp;rsquo;s check some numerical characteristics of the estimator,&lt;/p&gt;
 &lt;div&gt;
 &lt;span class=&#34;math display&#34;&gt;\[
 \begin{aligned}
+\mathbb{E}(\widehat{N})&amp;=\left(1+\frac{1}{k}\right)\mathbb{E}(X_{(k)})-1=N,\\
 \mathrm{var}(\widehat{N})&amp;=\left(1+\frac{1}{k}\right)^2\mathrm{var}(X_{(k)})\\
 &amp;=\left(1+\frac{1}{k}\right)^2\left(\mathbb{E}(X_{(k)}^2)-\left(\mathbb{E}(X_{(k)})\right)^2\right)\\
 &amp;=\frac{(N-k)(N+1)}{k(k+2)}.
@@ -64,7 +62,7 @@ Frome the identity we see that $N$ is determined by the difference between $N_2$
 $$
 \Pr(S=s)=\frac{\sum_{x_{(1)}=N_1}^{N_2-s}{s-1\choose k-2}}{N\choose k}=\frac{(N_2-s-N_1+1){s-1\choose k-2}}{N\choose k}=\frac{(N-s){s-1\choose k-2}}{N\choose k}.
 $$
-As what we&amp;rsquo;ve done in Method 1, we are interested in $\mathbb{E}(S)$ and $\mathrm{var}(S)$. Before we start to calcute these two numerical characteristics, let&amp;rsquo;s first figure out some equations to make our calculation more easy:&lt;/p&gt;
+As what we&amp;rsquo;ve done in Method 1, we are interested in $\mathbb{E}(S)$ and $\mathrm{var}(S)$. Before we start to calcute these two numerical characteristics, let&amp;rsquo;s first figure out some equations to make our calculation easier:&lt;/p&gt;
 &lt;div&gt;
 &lt;span class=&#34;math display&#34;&gt;\[
 \begin{aligned}
@@ -98,7 +96,9 @@ and we have&lt;/p&gt;
 \end{aligned}
 \]&lt;/span&gt;
 &lt;/div&gt;
-&lt;p&gt;Compared to Method I, the variance of the estimator in Method II is about twice as much as that of the estimator in Method I. It seems that Method I is better. However, remind that in Method I, we have one more assumption. If the assumption is true, then the estimator I is better since the estimator II neglects the useful information, which makes it possess bigger variance. But if the assumption is not true, then the estimator I is not necessarily an unbiased estimation since all the deduction is based on the wrong assumption! Thus, we can hardly tell which etimator is better and the choice depends on your criterion.&lt;/p&gt;</description>
+&lt;p&gt;Compared to Method I, the variance of the estimator in Method II is about twice as much as that of the estimator in Method I. It seems that Method I is better. However, remind that in Method I, we have one more assumption. If the assumption is true, then the estimator I is better since the estimator II neglects the useful information, which makes it possess bigger variance. But if the assumption is not true, then the estimator I is not necessarily an unbiased estimation since all the deduction is based on the wrong assumption! Thus, we can hardly tell which etimator is better and the choice depends on your criterion.&lt;/p&gt;
+&lt;h3 id=&#34;method-iii&#34;&gt;Method III
+&lt;/h3&gt;</description>
         </item>
         <item>
         <title>Note of Real Analysis by Folland</title>
@@ -114,7 +114,7 @@ and we have&lt;/p&gt;
         <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate>
         
         <guid>https://neoneu.github.io/about/</guid>
-        <description>&lt;p&gt;My email is &lt;a class=&#34;link&#34; href=&#34;mailto:skolgrand987@gmail.com&#34; &gt;skolgrand987@gmail.com&lt;/a&gt;, If you have any question or suggestion, contact me and I&amp;rsquo;d appreciate it very much.&lt;/p&gt;
+        <description>&lt;p&gt;My email is &lt;a class=&#34;link&#34; href=&#34;mailto:skolgrand987@gmail.com&#34; &gt;skolgrand987@gmail.com&lt;/a&gt;. If you have any question or suggestion, contact me and I&amp;rsquo;d appreciate it very much.&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -180,6 +180,15 @@ f(x)=\begin{cases}
 &lt;p&gt;Undoubtedly, it is a challenge to play such a piece of orchestral music on a single guitar, since some details will inevitably be lost. However, I just love this piece so much that I can&amp;rsquo;t help myself trying to figure out the whole piece on my own guitar. Fortunately, I finally created its guitar tablature. All work is done on the Power TAB Editor. If you also want to compose you own work, just do it!&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;Waltz%20of%20the%20Flowers.pdf&#34; &gt;Here&lt;/a&gt; is the pdf of the TAB.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;Waltz%20of%20the%20Flowers.pt2&#34; &gt;Here&lt;/a&gt; is the pt2 file of the TAB, in which you can play and edit the TAB if you have already installed Power TAB Editor.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://neoneu.github.io/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://neoneu.github.io/links/</guid>
+        <description>&lt;p&gt;Here are some links to useful resources.&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Search</title>
